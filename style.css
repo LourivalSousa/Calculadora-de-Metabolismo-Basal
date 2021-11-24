@@ -1,0 +1,102 @@
+html {
+    font-size: 100%;
+}
+#graficoContainer{
+    position:absolute;
+    padding: 3%;
+    left: calc(30vw - 40px);
+    top: 600px;
+    width: 40vw;
+    height: 40vh;
+    display: none;
+}
+
+
+#containerPrincipal{
+    max-width: 45% ;
+    height:  500px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: #4054B2;
+    position:relative;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo{
+    margin:0px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+
+}
+
+.inp {
+    position: relative;
+    width: 80%;
+    top: 5%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+
+#MorF {
+    position: relative;
+    width: calc(80% + 20px); 
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom:20px; 
+    top: -10px;
+}
+
+#calcular{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%; 
+    top: 20%;
+    background-color: #61ce70;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+#calcular:active {
+    background-color: white;
+    color: #61CE70;
+}
+
+#textoTmb {
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    top: 10%;
+}
+
+@media (max-width: 570px){
+    html {
+        font-size: 80%;
+    }
+
+}
+
+@media (max-width: 440px){
+    html{
+        font-size: 70%;
+    }
+    #graficoContainer{
+        width: 60vw;
+        height:60vh;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Caculadora de Metabolismo Basal</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <div id="graficoContainer">
+        <canvas id="grafico" width="400px" height="400px"></canvas> 
+    </div>
+    <div id="containerPrincipal">
+        <h1 id="titulo">Calculadora de Tmb</h1> 
+        <input id="idade" class="inp" maxlength="2" type="tel" min="0" placeholder="Idade">
+        <input id="peso" class="inp" maxlength="3" type="tel" min="0" placeholder="Peso Kg">
+        <input id="altura" class="inp" maxlength="3" type="tel" min="0" placeholder="Altura cm">
+        <input id="calcular" type="button" value="Calcular" onclick="mostrarInformacoes()">
+        <select name="sexo" id="MorF">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>   
+        <div id="textoTmb"></div>
+    </div>
+    <script src="./grafico.js"></script>
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>
